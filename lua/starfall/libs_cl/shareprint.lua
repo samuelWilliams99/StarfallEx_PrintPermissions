@@ -32,10 +32,10 @@ local function noColors( data )
     return out
 end
 
-SF.Permissions.registerPrivilege( "print.chat", "Print chat", "Allows the starfall to print to your chat (and by extension, your console)", { client = { default = 1 } } )
-SF.Permissions.registerPrivilege( "print.console", "Print console", "Allows the starfall to print to your console", { client = { default = 1 } } )
-SF.Permissions.registerPrivilege( "print.screen", "Print in color", "Allows the starfall to print to the center of your screen", { client = { default = 1 } } )
-SF.Permissions.registerPrivilege( "print.color", "Print in color", "Allows the starfall to print in color where it is allowed", { client = { default = 1 } } )
+SF.Permissions.registerPrivilege( "print.chat", "Print to chat", "Allows the starfall to print to your chat (and by extension, your console).", { client = { default = 1 } } )
+SF.Permissions.registerPrivilege( "print.console", "Print to console", "Allows the starfall to print to your console.", { client = { default = 1 } } )
+SF.Permissions.registerPrivilege( "print.screen", "Print on screen", "Allows the starfall to print to the center of your screen.", { client = { default = 1 } } )
+SF.Permissions.registerPrivilege( "print.color", "Print in color", "Allows the starfall to print in color where it is allowed, otherwise, prints are blue.", { client = { default = 1 } } )
 
 return function( instance )
 
