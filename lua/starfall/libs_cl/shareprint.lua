@@ -51,7 +51,7 @@ return function( instance )
                     alreadyprinted[v] = true
                     local s = string.rep( "\t", indent ) .. tostring( k ) .. ":"
                     printFunc( printBlue, s )
-                    printTableX( v, indent + 1, alreadyprinted )
+                    printTableX( v, indent + 1, alreadyprinted, printFunc )
                 else
                     local s = string.rep( "\t", indent ) .. tostring( k ) .. "\t=\t" .. tostring( v )
                     printFunc( printBlue, s )
